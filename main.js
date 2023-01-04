@@ -13,6 +13,7 @@ let count=0
 let leadingCount=0
 let countG=0
 let leadingCountG=0
+
 function leaderCounterH(){
     if(count < 10){
         leadingCount = "0" + count.toString()
@@ -33,7 +34,7 @@ function leaderCounterG(){
     guestScore.innerText = leadingCountG
      
 }
-highScorer()
+// highScorer()
 
 onePlusHome.addEventListener('click',function(){
     count++
