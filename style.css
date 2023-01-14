@@ -1,390 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family:'Cursed Timer ULiL';
     src: url(scoreFonts.ttf) format("truetype");
 }
 
 body{
-    position: relative;
-    width: 575px;
-    height: 385px;
-    background: #1B244A; 
+    font-family: 'Montserrat', sans-serif;
+    background: #1B244A;
     
 }
-.parent-main-container{
-    position: absolute;
-    top: 5%;
-    left:15%;
-    transform: translate(-5%,-15%);
-}
+
 .main-container{
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    text-align: center; */
-}
-
-.home-container{
-    /* border: 10px solid white; */
-   /* width: 500px;  */
-}
-
-.guest-container{
-/* border: 10px solid white; */
-}
-
-#home{
-   margin-left: 40px;
-}
-#guest{
-   margin-left: 300px;
-}
-
-.home-text{
-    position: absolute;
-    width: 149px;
-    height: 36px;
-    left: 85px;
-    top: 68px;
-
-    font-family: 'Verdana';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 36px;
-    /* identical to box height, or 90% */
-
     text-align: center;
-
-    color: #EEEEEE;
+    padding: 2em;
+    height: 95vh; 
 }
 
-
-.score-box-home{
-    position: absolute;
-    width: 155px;
-    height: 120px;
-    left: 82px;
-    top: 125px;
-    text-align: center;
+button{
+     width: 25%;
+     height: 10vh;
+     margin: 4px;
+     font-family:'Cursed Timer ULiL';
+     box-shadow: 0 0 5px wheat;
+     cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+/* home team design */
+.home-team{
+    flex-basis: 50%;
+    /* border: 2px solid white; */
+    justify-content: center;
     
 }
-
-.home-points-text{
-    position: absolute;
-    width: 200px;
-    height: 150px;
-    left: 70px;
-    top: 80px;
-    background-color: black;
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 100px;
-    /* or 141% */
+.home-team > h1{
+    font-size: 4rem;
+    color: white;
+}
+.home-team .home-team-screen{
     display: flex;
-    text-align: center;
-    align-items: center;
-
-    color: #F94F6D;
-    }
-
-p{
-    margin-left: 35px;
+    justify-content: center;
 }
-
-.guest-text{
-    position: absolute;
-    width: 149px;
-    height: 36px;
-    left: 340px;
-    top: 68px;
-
-    font-family: 'Verdana';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 36px;
-    /* identical to box height, or 90% */
-
-    text-align: center;
-
-    color: #EEEEEE;
-}
-
-.score-box-guest{
-    position: absolute;
-    width: 155px;
-    height: 120px;
-    left: 337px;
-    top: 125px;
-}
-
-.guest-points-text{
-    position: absolute;
-    
-    width: 200px;
-    height: 150px;
-    left: 355px;
-    top: 80px;
+.home-team .home-black-screen{
+    /* border: 1px solid white; */
+    margin: 2em ;
+    width: 80%;
+    height: 30vh;
     background-color: black;
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 100px;
-    /* or 141% */
+    color: red;
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
-    color: #F94F6D;
-}
-
-/* Buttons */
-
-.buttons-home{
-    position: absolute;
-    width: 155px;
-    height: 45px;
-    left: 90px;
-    top: 271px;
+    font-family:'Cursed Timer ULiL';
+    
     
 }
-.buttons-guest{
-    position: absolute;
-    width: 155px;
-    height: 45px;
-    left: 377px;
-    top: 271px;
+.home-black-screen > p{
+    font-size: 7rem;
 }
-
-/* Buttons Function */
-
-#one-plus-h{
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    left: 70px;
-    top: 180px;
+.home-team .home-buttons{
+   
+    display: flex;
+    justify-content: center;
+}
+.home-btn1{
     background-color: #f4acb9 ;
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 155% */
-    
-    text-align: center;
-    
-    color: #040404;
 }
-
-#two-plus-h{
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    left: 133px;
-    top: 180px;
-    
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 155% */
+.home-btn2{
     background-color: rgba(250, 250, 21, 0.797);
-    text-align: center;
-
-    color: #040404;
 }
-
-#three-plus-h{
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    left: 195px;
-    top: 180px;
+.home-btn3{
     background-color: rgb(102, 255, 0);
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 155% */
-    
-    text-align: center;
-
-    color: #040404;
 }
 
-#one-plus-g{
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    left: 324px;
-    top: 180px;
+
+/* guest team design */
+.guest-team{
+    flex-basis: 50%;
+    /* border: 2px solid white; */
+}
+.guest-team > h1{
+    font-size: 4rem;
+    color: white;
+}
+.guest-team .guest-black-screen{
+    /* border: 1px solid white; */
+    margin: 2em ;
+    width: 80%;
+    height: 30vh;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Cursed Timer ULiL';
+}
+.guest-team .guest-team-screen{
+    display: flex;
+    justify-content: center;
+}
+.guest-black-screen > p{
+    font-size: 7rem;
+}
+.guest-team .guest-buttons{
+    display: flex;
+    justify-content: center;
+}
+.guest-btn1{
     background-color: #f4acb9 ;
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 155% */
-    
-    text-align: center;
-    
-    color: #040404;;
-    
 }
-
-#two-plus-g{
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    left: 388px;
-    top: 180px;
+.guest-btn2{
     background-color: rgba(250, 250, 21, 0.797);
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 155% */
-    
-    text-align: center;
-    
-    color: #040404;
+}
+.guest-btn3{
+    background-color: rgb(102, 255, 0);
 }
 
-#three-plus-g{
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    left: 450px;
-    top: 180px;
-    
-    font-family: 'Cursed Timer ULiL';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 155% */
-    background-color: rgb(102, 255, 0);
-    text-align: center;
-    
-    color: #040404;
-}
+
+
 
 .reset{
     position: absolute;
-    top: 250px;
-    left: 450px;
-    width: 150px;
-    height: 50px;
-    border: none;
-    background-color: rgb(241, 221, 35);
-    font-size: 24px;
-    border-radius: 6px;
-    font-weight: bold;
-}
-.home-score-display{
-    margin-top: 15px;
-}
-.guest-score-display{
-    margin-top: 15px;
+    top: 75%;
+    background-color: rgb(96, 3, 3);
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 10px;
 }
 
-.reset:hover{
-    background-color: #F94F6D;
-    cursor: pointer;
-    transition: .5s;
+
+@media (min-width:984px) {
+    .home-team .home-black-screen{
+        height: 40vh; 
+    }
+    .guest-team .guest-black-screen{
+        height: 40vh;
+
+    }
+    .reset{
+        top: 87%;
+    }
+    .home-black-screen > p{
+        font-size: 7rem;
+    }
+    .guest-black-screen > p{
+        font-size: 7rem;
+    }
 }
 
-    @media screen and (max-width : 700px) {
-        body{
-            
-        }
+@media (max-width:500px) {
+    .home-team .home-black-screen{
         
-        #home{
-            margin-left: 50px;
-            font-size: 50px;
-        }
-        #guest{
-            margin-left: 100px;
-            font-size: 50px;
-        }
-        .reset{
-            position: absolute;
-            top: 65%;
-            left: 77%;
-            width: 150px;
-            height: 50px;
-            border: none;
-            background-color: rgb(241, 221, 35);
-            font-size: 24px;
-            border-radius: 6px;
-            font-weight: bold;
-            display: none;
-        }
+        height: 20vh; 
+    }
+    .guest-team .guest-black-screen{
+        height: 20vh;
 
-        .home-text{
-            position: absolute;
-            width: 149px;
-            height: 36px;
-            left: 85px;
-            top: 68px;
-        
-            font-family: 'Verdana';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 36px;
-            /* identical to box height, or 90% */
-        
-            text-align: center;
-        
-            color: #EEEEEE;
-        }
-        #home{
-            margin-left: 0px;
-        }
-        #guest{
-            margin-left: 25px;
-        }
-        .score-box-home{
-            position: absolute;
-            width: 155px;
-            height: 120px;
-            left: 1px;
-            top: 125px;
-            text-align: center;
-            
-        }
-        .score-box-guest{
-            position: absolute;
-            width: 105px;
-            height: 70px;
-            left: 2px;
-            top: 125px;
-        }
-        .buttons-home{
-            position: absolute;
-            width: 155px;
-            height: 45px;
-            left: 15px;
-            top: 231px;
-            
-        }
-        .buttons-guest{
-            position: absolute;
-            width: 155px;
-            height: 45px;
-            left: 45px;
-            top: 231px;
-        }
+    }
+    .home-team > h1{
+        font-size: 3rem;
         
     }
+    .guest-team > h1{
+        font-size: 3rem;
+        
+    }
+    .reset{
+        top: 60%;
+        font-size: 1.2rem;
+    }
+    button{
+        width: 20%;
+        height: 7vh;
+        margin: 4px;
+        font-family:'Cursed Timer ULiL';
+        box-shadow: 0 0 5px wheat;
+        cursor: pointer;
+       font-size: 1.3rem;
+       border-radius: 5px;
+   }
+   .home-black-screen >p{
+    font-size: 4rem;
+   }
+   .guest-black-screen > p{
+    font-size: 4rem;
+    }
+}

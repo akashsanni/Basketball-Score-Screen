@@ -4,49 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- led fonts -->
-    <link href="scoreFonts.ttf" rel="stylesheet">
-    <!-- Style sheet -->
     <link rel="stylesheet" href="style.css">
-    <title>Score Displayer</title>
+    <title>Basketball Score Screen</title>
 </head>
 <body>
-     <div class="parent-main-container">
         <div class="main-container">
-        
-        <div class="home-container">
-            <div class="home-text">
-            <h1 id="home">HOME</h1>
-            </div>
-            <div class="score-box-home">
-                <div class="home-points-text">
-                    <p class="home-score-display">00</p>
+            <div class="home-team">
+                <h1>HOME</h1>
+                <div class="home-team-screen">
+                    <div class="home-black-screen">
+                    <p class="home-score">00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="buttons-home">
-                <button id="one-plus-h">+1</button>
-                <button id="two-plus-h">+2</button>
-                <button id="three-plus-h">+3</button>
-            </div>
+                <div class="home-buttons">
+                    <button class="home-btn1 btn1">+1</button>
+                    <button class="home-btn2 btn2">+2</button>
+                    <button class="home-btn3 btn3">+3</button>
+                </div>
+            </div>            
+            <div class="guest-team">
+                <h1>GUEST</h1>
+                <div class="guest-team-screen">
+                    <div class="guest-black-screen">
+                    <p class="guest-score">00</p>
+                    </div>
+                </div>
+                <div class="guest-buttons">
+                    <button class="guest-btn1 btn1">+1</button>
+                    <button class="guest-btn2 btn2">+2</button>
+                    <button class="guest-btn3 btn3">+3</button>
+                </div>
+            </div> 
+            <button class="reset">RESET</button>           
         </div>
 
-        <div class="guest-container">
-            <div class="guest-text">
-                <h1 id="guest">GUEST</h1>
-            </div>
-            <div class="score-box-guest">
-                <div class="guest-points-text">
-                    <p class="guest-score-display">00</p></div>
-            </div>
-            <div class="buttons-guest">
-                <button id="one-plus-g">+1</button>
-                <button id="two-plus-g">+2</button>
-                <button id="three-plus-g">+3</button>
-            </div>
-        </div>
-        <button class="reset">Reset Score</button>
-    </div>
-</div>
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,14 +1,14 @@
-const onePlusHome =document.querySelector('#one-plus-h')
-const twoPlusHome =document.querySelector('#two-plus-h')
-const threePlusHome =document.querySelector('#three-plus-h')
-const onePlusGuest =document.querySelector('#one-plus-g')
-const twoPlusGuest =document.querySelector('#two-plus-g')
-const threePlusGuest =document.querySelector('#three-plus-g')
+const homeBtn1 = document.querySelector('.home-btn1')
+const homeBtn2 =document.querySelector('.home-btn2')
+const homeBtn3 =document.querySelector('.home-btn3')
+const guestBtn1 =document.querySelector('.guest-btn1')
+const guestBtn2 =document.querySelector('.guest-btn2')
+const guestBtn3 =document.querySelector('.guest-btn3')
 
-const homeScorePointsText = document.querySelector('.home-points-text')
+const homeScore = document.querySelector('.home-score')
+const guestScore = document.querySelector('.guest-score')
 
-const homeScore =document.querySelector('.home-score-display')
-const guestScore =document.querySelector('.guest-score-display')
+
 let count=0
 let leadingCount=0
 let countG=0
@@ -36,27 +36,27 @@ function leaderCounterG(){
 }
 // highScorer()
 
-onePlusHome.addEventListener('click',function(){
+homeBtn1.addEventListener('click',function(){
     count++
     leaderCounterH()    
 })
-twoPlusHome.addEventListener('click',function(){
+homeBtn2.addEventListener('click',function(){
     count +=2
     leaderCounterH()
 })
-threePlusHome.addEventListener('click',function(){
+homeBtn3.addEventListener('click',function(){
     count +=3
     leaderCounterH()
 })
-onePlusGuest.addEventListener('click',function(){
+guestBtn1.addEventListener('click',function(){
     countG++
     leaderCounterG()
 })
-twoPlusGuest.addEventListener('click',function(){
+guestBtn2.addEventListener('click',function(){
     countG +=2
     leaderCounterG()
 })
-threePlusGuest.addEventListener('click',function(){
+guestBtn3.addEventListener('click',function(){
     countG +=3
     leaderCounterG()
 })
