@@ -158,12 +158,15 @@ button{
 }
 
 @media (max-width:500px) {
+    
     .home-team .home-black-screen{
         
-        height: 20vh; 
+        height: 15vh; 
+        margin-top: 3em;
     }
     .guest-team .guest-black-screen{
-        height: 20vh;
+        height: 15vh;
+        margin-top: 3em;
 
     }
     .home-team > h1{
@@ -180,12 +183,12 @@ button{
     }
     button{
         width: 20%;
-        height: 7vh;
+        height: 4vh;
         margin: 4px;
         font-family:'Cursed Timer ULiL';
         box-shadow: 0 0 5px wheat;
         cursor: pointer;
-       font-size: 1.3rem;
+       font-size: 1.1rem;
        border-radius: 5px;
    }
    .home-black-screen >p{
@@ -193,5 +196,8 @@ button{
    }
    .guest-black-screen > p{
     font-size: 4rem;
+    }
+    .main-container{
+        margin-top: 3em ;
     }
 }
